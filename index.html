@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education in Rivers State</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-search/dist/leaflet-search.min.css" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="jumbotron text-center">
+        <h1>Mapping the Educational Challenges in Rivers State</h1>
+        <p>Rivers State, one of Nigeria's most populous regions, faces significant challenges in its educational systems. The map below provides a detailed visualization of hospitals and schools across the state, 
+            highlighting the pressing issues they face. From under-resourced educational facilities to insufficient classrooms, 
+            the situation requires urgent attention from decision-makers and investors.</p>
+    </header>
+
+    <!-- Map Section -->
+    <section id="map-section">
+        <div id="map"></div> 
+        <div id="sidebar">
+        <h2>Interactive Digital Map For Education and Hospital Facilities</h2>
+        <div id="key">
+            <h3>Map Key</h3>
+            <div><span class="legend-color" style="background-color: white;"></span> Represents Schools with good facilities</div>
+            <div><span class="legend-color" style="background-color: brown;"></span>Represents Schools with medium facilities</div>
+            <div><span class="legend-color" style="background-color: black;"></span>Represents Schools with low facilities</div>
+        </div> 
+        <p id="description"></p>
+    </div>   
+    </section>
+
+    <!-- Understaffed Hospitals Section --> 
+    <section id="understaffed">
+        <h2>Educational Challenges: Overcrowded Schools and Poor Infrastructure</h2>
+        <p>The schools across Rivers State tell a similar story of inadequacy. Many of the mapped 
+            schools suffer from overcrowded classrooms, with insufficient classroom sizes to 
+            accommodate the growing number of students. Facilities such as toilets are either inadequate or entirely absent, 
+            particularly in rural schools, where children are often forced to attend classes in 
+            poorly maintained or even unsafe structures.</p>
+        <img src="Lganumberofschools.jpg" alt="Number of Schools per LGA" width="50%" height="69%">
+        <p>Key services like water availability, sports pitches, and sick bays are frequently lacking, 
+            which significantly impacts the students' health, well-being, and overall learning experience. 
+        </p>
+        <img src="Lgaclassroom.jpg" alt="Number of Schools per LGA" width="50%" height="69%">
+
+    </section>
+
+    <!-- How the Map Can Help -->
+    <section id="how-map-helps">
+        <h2>The Importance of Data for Decision-Makers and Investors</h2>
+        <p>This map provides not just a geographical overview but a comprehensive insight into the systemic 
+            issues faced by Secondary schools in Rivers State. The data collected and visualized here serves 
+            as an invaluable tool for:</p>
+            <ol>
+                <li>Decision-Makers: Government officials and policy-makers can use this data to identify 
+                    critical areas that require immediate intervention. For example, the map highlights regions
+                     where education services are most underdeveloped, allowing for targeted resource allocation to 
+                     improve the education outcomes of underserved Local Government Areas.</li>
+                     <li>Investors: This data offers investors a clear view of where their capital can make the most significant impact. Healthcare and education sectors are crucial drivers of development, and this map serves as a roadmap for potential investors looking to address critical infrastructure gaps. By investing in these sectors, they 
+                        can not only generate financial returns but also create 
+                        lasting social impact, improving the quality of life for millions of people.</li>
+                        <li>Non-Governmental Organizations (NGOs): NGOs focused on education or community 
+                            development can utilize this data to plan effective interventions.
+                             By understanding where the gaps are, they can direct their efforts to the regions that need them the most.</li>
+            </ol>
+            <p>This Data Can Help:</p> 
+            <ul>
+                <li>Identifying Priorities: The data helps decision-makers prioritize investments and 
+                    reforms based on regions most in need, whether it be in healthcare or education. For example, rural hospitals that lack water supply can be prioritized for infrastructure development, 
+                    while schools without sports facilities can receive 
+                    targeted interventions to promote students' physical health and wellness.</li>
+                    <li>Informed Investments: Investors can use the map to identify regions where infrastructure development
+                         will have the most significant impact,
+                         whether in upgrading healthcare facilities, building new schools, or improving existing educational resources.</li>
+                         <li>Tracking Progress: As improvements are made, this map can 
+                            serve as a baseline for tracking the progress of interventions.
+                             Policymakers and investors can use it to monitor changes over time and assess whether their investments 
+                             are delivering the intended benefits to local communities.
+                         </li>
+              </ul>
+    </section>
+
+    <!-- Importance of Data -->
+    <section id="importance-of-data">
+        <h2>Update On The GridCode Challenge</h2>
+        <p>Team Splendor couldn't participate in the challenge as the link in the API documentation earlier sent was not found, We sent email, though there was no direct 
+            response, but the team noticed that the site came up by monday being 18th, November. <br/>
+            The team tried to integrate the gridcode API in the map but we kept getting an error message that says 'API Key is expired'
+            <br/>
+            We hoped to have participate in the challenge to see the uniqueness it would have added to our map.
+        </p>
+    </section>
+
+    <section>  
+    <h2>DATA COLLECTION</h2>
+    <p>The data for schools was from <strong>Rivers State Ministry of Education</strong> Database. <em> OpenstreetMap and Google map </em> were equally used. They are all Open Source Data.</p>
+</section> 
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Secondary Schools in Rivers State | Data used to improve infrastructure planning</p>
+    </footer>
+
+    <!-- External JS -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+<script src="https://unpkg.com/leaflet-search/dist/leaflet-search.min.js"></script>
+<script src="boundary.js"></script>
+<script src="map.js"></script>
+
+</body>
+</html>
